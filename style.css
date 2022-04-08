@@ -1,0 +1,152 @@
+body, h1, h2, h3, h4, p, a {
+    margin: 0;
+    font-size: 100%;
+    font-weight: normal;
+}
+
+* {
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    background-image: url(https://images.pexels.com/photos/1276237/pexels-photo-1276237.jpeg?cs=srgb&dl=pexels-lukas-hartmann-1276237.jpg&fm=jpg);
+    background-size: cover;
+}
+
+#main {
+    max-width: 960px;
+    margin: auto;
+}
+
+.header {
+    background-color: aquamarine;
+    width: 100%;
+    height: 150px;
+    background-image: url(https://images.pexels.com/photos/248874/pexels-photo-248874.jpeg?cs=srgb&dl=pexels-pixabay-248874.jpg&fm=jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.header-title {
+    font-size: 40px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: auto;
+}
+
+form[name="search"] {float: right;}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+}
+
+.overlay input {
+    padding-left: 10px;
+    border: 2px solid #aedd82;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    background: #F9F0DA;
+    color: #9E9C9C;
+}
+.overlay button {
+    top: 0;
+    right: 0px;
+    height: 21px;
+    border: none;
+    background: #aedd82;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.navigate {
+    background-color: blue;
+    height: 50px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.content {
+    background-color: rgb(255, 225, 185);
+    height: 660px;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+}
+
+.sidebar {
+    width: 30%;
+    float: left;
+    background-color: #aedd82;
+    border-radius: 5px;
+}
+
+.content-block {
+    width: 70%;
+
+}
+
+.footer {
+    background-color: #7e7e7e;
+    color: #dbdbdb;
+    font-size: 11px;
+    margin: auto;
+    max-width: 960px;
+    height: 85px;
+    display: flex;
+}
+
+.nav {
+    height: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .content {   
+        flex-direction: column;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    li a {
+        float: none;
+        width:100%;
+    }
+}
+
+.footer-copyright {
+    margin: auto;
+}
