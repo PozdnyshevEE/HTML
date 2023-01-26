@@ -10,7 +10,7 @@ body, h1, h2, h3, h4, p, a {
 
 body {
     font-family: 'Helvetica', 'Arial', sans-serif;
-    background-image: url(https://images.pexels.com/photos/1276237/pexels-photo-1276237.jpeg?cs=srgb&dl=pexels-lukas-hartmann-1276237.jpg&fm=jpg);
+    background-image: url(https://dasart.ru/userdata/image/57/39/573902610e8b2c471f09137f759817c1.jpeg);
     background-size: cover;
 }
 
@@ -23,7 +23,7 @@ body {
     background-color: aquamarine;
     width: 100%;
     height: 150px;
-    background-image: url(https://images.pexels.com/photos/248874/pexels-photo-248874.jpeg?cs=srgb&dl=pexels-pixabay-248874.jpg&fm=jpg);
+    background-image: url(images/Ferma.jpg);
     background-size: cover;
     background-position: center;
     text-align: center;
