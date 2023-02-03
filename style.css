@@ -1,156 +1,159 @@
 body, h1, h2, h3, h4, p, a {
-    margin: 0;
-    font-size: 100%;
-    font-weight: normal;
+  margin: 0;
+  font-size: 100%;
+  font-weight: normal;
 }
 
 * {
-    box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Helvetica', 'Arial', sans-serif;
-    background-image: url(https://dasart.ru/userdata/image/57/39/573902610e8b2c471f09137f759817c1.jpeg);
-    background-size: cover;
-}
-
-#main {
-    max-width: 960px;
-    margin: auto;
+  font-family: "Helvetica", "Arial", sans-serif;
+  background-image: url(https://dasart.ru/userdata/image/57/39/573902610e8b2c471f09137f759817c1.jpeg);
+  background-size: cover;
 }
 
 .header {
-    background-color: aquamarine;
-    width: 100%;
-    height: 150px;
-    background-image: url(images/Ferma.jpg);
-    background-size: cover;
-    background-position: center;
-    text-align: center;
+  background-color: aquamarine;
+  width: 100%;
+  height: 150px;
+  background-image: url(images/Ferma.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
 }
 
 .header-title {
-    font-size: 40px;
-    color: white;
-    text-transform: uppercase;
-    font-weight: 500;
-    margin: auto;
+  font-size: 40px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: auto;
 }
 
-form[name="search"] {float: right;}
+form[name="search"] {
+  float: right;
+  margin: 20px;
+  display: block;
+  font-size: 20px;
+}
+
+input::placeholder {
+  color: #4caf50;
+}
 
 .overlay {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, .5);
-    display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
 }
 
 .overlay input {
-    padding-left: 10px;
-    border: 2px solid #aedd82;
-    border-radius: 5px 0 0 5px;
-    outline: none;
-    background: #F9F0DA;
-    color: #9E9C9C;
+  padding-left: 10px;
+  border: 2px solid #aedd82;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  background: #f9f0da;
+  color: #9e9c9c;
 }
 .overlay button {
-    top: 0;
-    right: 0px;
-    height: 21px;
-    border: none;
-    background: #aedd82;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
+  top: 0;
+  right: 0px;
+  height: 21px;
+  border: none;
+  background: #aedd82;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
 }
 
 .navigate {
-    background-color: blue;
-    height: 50px;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
+  background-color: blue;
+  height: 50px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .content {
-    background-color: rgb(255, 225, 185);
-    height: 660px;
-    background-color: rgba(255, 255, 255, 0.5);
-    display: flex;
+  background-color: rgb(255, 225, 185);
+  height: 660px;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
 }
 
 .sidebar {
-    width: 30%;
-    float: left;
-    background-color: #dff8dc;
-    border-radius: 10px;
-    margin: 10px 0px 10px 10px;
-    text-align: center;
+  width: 20%;
+  float: left;
+  background-color: #dff8dc;
+  border-radius: 10px;
+  margin: 10px 0px 10px 10px;
+  text-align: center;
 }
 
 .content-block {
-    width: 70%;
-    background-color: #dff8dc;
-    border-radius: 10px;
-    margin: 10px;
+  width: 80%;
+  background-color: #dff8dc;
+  border-radius: 10px;
+  margin: 10px;
 }
 
 .footer {
-    background-color: #7e7e7e;
-    color: #dbdbdb;
-    font-size: 11px;
-    margin: auto;
-    max-width: 960px;
-    height: 85px;
-    display: flex;
+  background-color: #7e7e7e;
+  color: #dbdbdb;
+  font-size: 11px;
+  margin: auto;
+  height: 85px;
+  display: flex;
 }
 
 .nav {
-    height: 100%;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    display: flex;
+  height: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  display: flex;
 }
 
 li {
-    float: left;
+  float: left;
 }
 
 li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-    background-color: #111;
+  background-color: #111;
 }
 
 .active {
-    background-color: #4CAF50;
+  background-color: #4caf50;
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
-    .content {   
-        flex-direction: column;
-    }
+  .content {
+    flex-direction: column;
+  }
 }
 
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
 @media screen and (max-width: 400px) {
-    li a {
-        float: none;
-        width:100%;
-    }
+  li a {
+    float: none;
+    width: 100%;
+  }
 }
 
 .footer-copyright {
-    margin: auto;
+  margin: auto;
 }
